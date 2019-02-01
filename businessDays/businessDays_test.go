@@ -1,4 +1,4 @@
-package holidays
+package businessdays
 
 import (
 	"testing"
