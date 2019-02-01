@@ -5,7 +5,25 @@ import (
 )
 
 // IsNewYears falls on the 1st of January
-func IsNewYears(input time.Time) bool {
+func IsNewYears(input time.Time, observed bool) bool {
+	if observed {
+		if input.Month() == time.January {
+			if input.Day() == 1 {
+				return true
+			}
+
+			if input.Day() == 2 && input.Weekday() == time.Monday {
+				return true
+			}
+		}
+
+		if input.Month() == time.December {
+			if input.Day() == 31 && input.Weekday() == time.Friday {
+				return true
+			}
+		}
+	}
+
 	return input.Month() == time.January && input.Day() == 1
 }
 
