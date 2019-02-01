@@ -15,6 +15,11 @@ func IsMLK(input time.Time) bool {
 		input.Day() >= 15 && input.Day() <= 21
 }
 
+// IsValentinesDay falls on the 14th of February
+func IsValentinesDay(input time.Time) bool {
+	return input.Month() == time.February && input.Day() == 14
+}
+
 // IsPresidentsDay falls on the third Monday of February
 func IsPresidentsDay(input time.Time) bool {
 	return input.Month() == time.February && input.Weekday() == time.Monday &&
