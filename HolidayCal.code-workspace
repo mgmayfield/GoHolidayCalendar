@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "onWindowChange",
+		"editor.fontFamily": "'FuraCode Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+		"editor.wordWrap": "wordWrapColumn",
+		"editor.wordWrapColumn": 120,
+		"files.exclude": {
+			".circleci": true,
+			".gitignore": true,
+			"go.mod": true,
+			"LICENSE": true
+		}
+	}
+}
